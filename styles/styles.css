@@ -1,1 +1,118 @@
 @import url(./reset.css);
+
+.scr-only {
+  display: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  font-size: 1.6rem;
+  padding: 15px 30px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+}
+
+.header-main img {
+  margin-right: 10px;
+}
+
+.header-main::after{
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0px 15px;
+}
+
+.header-right button {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.main {
+  font-size: 1.6rem;
+  height: 90vh;
+}
+
+.search {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.search-text {
+  font-size: 7.2rem;
+  font-weight: 500;
+}
+
+.search-bar {
+  width: 700px;
+  height: 60px;
+  margin-top: 50px;
+  padding: 0px 20px;
+  font-size: 2.4rem;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  background: url('./imgs/arrow_forward.png') no-repeat 97% 50%;
+  box-shadow: 0px 0px 10px #aaa;
+}
+
+/* 메뉴 섹션 */
+.menu {
+  background-color: aqua;
+}
+
+.menu-item {
+  background-color: yellow;
+  width: 300px;
+  padding-left: 200px;
+  position: relative;
+}
+
+.menu-item-title {
+  background-color: violet;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.menu-item-text {
+  background-color: orangered;
+  font-size: 2.0rem;
+  line-height: 1.6;
+}
+
+.menu-item-link {
+  background-color: purple;
+  color: blue;
+}
+
+.menu-item-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
