@@ -5,23 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>웹제작 스터디</title>
-  <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 <body>
   <!-- 헤더 -->
   <header class="header">
     <h1 class="header-logo scr-only">Abstract Help Center</h1>
-    <div class="header-left">
-      <a href="/" class="header-main">
-        <img src="./styles/imgs/logo.png" alt="앱스트랙트 로고" />
-        Abstract
-      </a>
-      <a href="/" class="header-help">Help Center</a>
-    </div>
-    <div class="header-right">
-      <button type="submit" class="button-submit">Submit a request</button>
-      <button type="button" class="button-sign">Sign in</button>
-    </div>    
+    <div class="header-inner-wrapper">
+      <div class="header-left">
+        <a href="/" class="header-main">
+          <img src="./styles/imgs/logo.png" alt="앱스트랙트 로고" />
+          <span>Abstract</span>
+        </a>
+        <a href="/" class="header-help">Help Center</a>
+      </div>
+      <div class="header-right">
+        <button type="submit" class="button-submit">Submit a request</button>
+        <button type="button" class="button-sign">Sign in</button>
+      </div>   
+    </div> 
   </header>
 
   <!-- 메인 섹션 -->
@@ -30,8 +32,10 @@
     <!-- 검색 섹션 -->
     <section class="search">
       <h2 class="search-title scr-only">Search Bar</h2>
-      <p class="search-text">How can we help?</p>
-      <input type="text" class="search-bar" placeholder="Search"/>
+      <form class="search-form" action="">
+        <label for="search-bar">How can we help?</label>
+        <input type="text" id="search-bar" name="search-bar" placeholder="Search"/>
+      </form>
     </section>
 
     <!-- 메뉴 섹션 -->
@@ -81,61 +85,63 @@
     <h2 class="footer-title scr-only">Footer</h2>
 
     <!-- 푸터 링크 모음 -->
-    <div class="footer-item">
-      <h3 class="footer">Abstract</h3>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a href="/">Start Trial</a></li>
-        <li class="footer-list-item"><a href="/">Pricing</a></li>
-        <li class="footer-list-item"><a href="/">Download</a></li>
-      </ul>
-    </div>
-    <div class="footer-item">
-      <h3 class="footer">Resources</h3>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a href="/">Blog</a></li>
-        <li class="footer-list-item"><a href="/">Help Center</a></li>
-        <li class="footer-list-item"><a href="/">Release Notes</a></li>
-        <li class="footer-list-item"><a href="/">Status</a></li>
-      </ul>
-    </div>
-    <div class="footer-item">
-      <h3 class="footer">Community</h3>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a href="/">Twitter</a></li>
-        <li class="footer-list-item"><a href="/">LinkedIn</a></li>
-        <li class="footer-list-item"><a href="/">Facebook</a></li>
-        <li class="footer-list-item"><a href="/">Dribble</a></li>
-        <li class="footer-list-item"><a href="/">Podcast</a></li>
-      </ul>
-    </div>
-    <div class="footer-item">
-      <h3 class="footer">Company</h3>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a href="/">About Us</a></li>
-        <li class="footer-list-item"><a href="/">Careers</a></li>
-        <li class="footer-list-item"><a href="/">Legal</a></li>
-      </ul>
-    </div>
-    <div class="footer-item">
-      <h3 class="footer">Contact Us</h3>
-      <ul class="footer-list">
-        <li class="footer-list-item"><a href="/">info@abstract.com</a></li>
-      </ul>
-    </div>
+    <section class="footer-wrapper">
+      <div class="footer-item">
+        <h3 class="footer">Abstract</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="/">Start Trial</a></li>
+          <li class="footer-list-item"><a href="/">Pricing</a></li>
+          <li class="footer-list-item"><a href="/">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer">Resources</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="/">Blog</a></li>
+          <li class="footer-list-item"><a href="/">Help Center</a></li>
+          <li class="footer-list-item"><a href="/">Release Notes</a></li>
+          <li class="footer-list-item"><a href="/">Status</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer">Community</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="/">Twitter</a></li>
+          <li class="footer-list-item"><a href="/">LinkedIn</a></li>
+          <li class="footer-list-item"><a href="/">Facebook</a></li>
+          <li class="footer-list-item"><a href="/">Dribble</a></li>
+          <li class="footer-list-item"><a href="/">Podcast</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer">Company</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="/">About Us</a></li>
+          <li class="footer-list-item"><a href="/">Careers</a></li>
+          <li class="footer-list-item"><a href="/">Legal</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer">Contact Us</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="/">info@abstract.com</a></li>
+        </ul>
+      </div>
+    </section>
 
     <!-- 저작권 -->
-    <div class="copyright-wrapper">
+    <section class="copyright-wrapper">
       <h2 class="copyright-title scr-only">Copyright</h2>
-      <span>Copyright 2022</span>
-      <span>Abstract Studio Design, Inc</span>
-      <span>All rights reserved</span>
-    </div>
+      <small>Copyright 2022</small>
+      <small>Abstract Studio Design, Inc</small>
+      <small>All rights reserved</small>
+    </section>
   </footer>
 
   <div class="help">
     <button type="button">
       <img src="/styles/imgs/info.png" alt="Information Button" />
-      Help
+      <span>Help</span>
     </button>
   </div>
 </body>

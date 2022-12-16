@@ -1,5 +1,11 @@
 @import url(./reset.css);
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .scr-only {
   display: none;
 }
@@ -15,17 +21,28 @@ a {
 
 /* 헤더 */
 .header {
+  background-color: #212121;
+  font-size: 1.8rem;
+}
+
+.header-inner-wrapper {
+  width: 1600px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #212121;
-  font-size: 1.6rem;
+}
+
+.header-left, .header-right {
   padding: 15px 30px;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+}
+
+.header-left a {
+  font-size: 2rem;
 }
 
 .header-main {
@@ -49,28 +66,52 @@ a {
 .header-right button {
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-submit {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.button-sign {
+  background-color: rgb(76, 95, 213);
+  transition: all ease-in 300ms;
+}
+
+.button-sign:hover {
+  background-color: white;
+  color: #212121;
 }
 
 .main {
   font-size: 1.6rem;
-  height: 90vh;
 }
 
 .search {
+ background-color: #DADBF1;
+}
+
+.search-form {
+  width: 1600px;
+  height: 300px;
+  margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  padding: 50px 0;
 }
 
-.search-text {
+.search-form label {
   font-size: 7.2rem;
   font-weight: 500;
 }
 
-.search-bar {
+.search-form input {
   width: 700px;
   height: 60px;
   margin-top: 50px;
@@ -78,16 +119,59 @@ a {
   font-size: 2.4rem;
   border: 1px solid #212121;
   border-radius: 5px;
-  background: url('./imgs/arrow_forward.png') no-repeat 97% 50%;
+  background: #fff url('./imgs/arrow_forward.png') no-repeat 97% 50%;
   box-shadow: 0px 0px 10px #aaa;
+  transition: all ease-in-out 200ms
 }
+
+.search-form input:hover {
+  border: 1px solid rgb(76, 95, 213);
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
 
 /* 메뉴 섹션 */
 .menu {
+  /* width: 1500px; */
+  margin: 0 auto;
   background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .menu-item {
+  width: 50%;
+  padding-left:300px;
+  position: relative;
+}
+
+.menu-item-title {
+  background-color: violet;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.menu-item-text {
+  background-color: orangered;
+  font-size: 2.0rem;
+  line-height: 1.6;
+}
+
+.menu-item-link {
+  background-color: purple;
+  color: blue;
+}
+
+.menu-item-logo {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+/* .menu-item {
   background-color: yellow;
   width: 300px;
   padding-left: 200px;
@@ -115,4 +199,4 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
