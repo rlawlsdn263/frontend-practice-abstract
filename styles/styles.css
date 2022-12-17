@@ -132,71 +132,115 @@ a {
   outline: none;
 }
 
-
 /* 메뉴 섹션 */
+
 .menu {
-  /* width: 1500px; */
-  margin: 0 auto;
-  background-color: aqua;
+  width: 1600px;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
+  padding: 100px 0;
 }
 
 .menu-item {
+  display: flex;
   width: 50%;
-  padding-left:300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.menu-link-wrapper {
   position: relative;
 }
 
+.menu-item a {
+  color: #212121;
+}
+
+.menu-item a::after {
+  content: url(./imgs/arrow_forward.png);
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: translateY(-12%);
+  left: 90px;
+}
+
 .menu-item-title {
-  background-color: violet;
+  /* background-color: violet; */
   font-size: 2.4rem;
   font-weight: 600;
 }
 
 .menu-item-text {
-  background-color: orangered;
+  /* background-color: orangered; */
   font-size: 2.0rem;
+  width: 80%;
   line-height: 1.6;
+  margin: 20px 0;
 }
 
 .menu-item-link {
-  background-color: purple;
+  /* background-color: purple; */
   color: blue;
 }
 
-.menu-item-logo {
-  position: absolute;
-  top: 0;
-  left: 20%;
+.menu-inner-left {
+  margin-right: 30px;
 }
 
-/* .menu-item {
-  background-color: yellow;
-  width: 300px;
-  padding-left: 200px;
+.menu-inner-right {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* 푸터 */
+
+.footer {
+  font-size: 1.6rem;
   position: relative;
+  background-color: #212121;
 }
 
-.menu-item-title {
-  background-color: violet;
-  font-size: 2.4rem;
-  font-weight: 600;
+.footer h3 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.menu-item-text {
-  background-color: orangered;
-  font-size: 2.0rem;
-  line-height: 1.6;
+.footer:last-child {
+  margin-top: 100px;
 }
 
-.menu-item-link {
-  background-color: purple;
-  color: blue;
+.contact {
+  margin-top: 30px;
 }
 
-.menu-item-logo {
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 120px 100px;
+  padding-right: 500px;
+}
+
+.footer-list-item {
+  margin: 8px 0;
+}
+
+.copyright-wrapper {
+  color: white;
   position: absolute;
-  top: 0;
-  left: 0;
-} */
+  bottom: 10%;
+  right: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.copyright-wrapper img {
+  width: 24px;
+  margin-bottom: 20px;
+}
+
+.copyright-wrapper small {
+  margin: 5px 0px;
+}
